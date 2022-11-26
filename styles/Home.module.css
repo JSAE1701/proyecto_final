@@ -108,6 +108,10 @@
   margin-left: 0.5rem;
 }
 
+.Background-image-cross-blue-green {
+  background-image: url('../img/azul_verde.png');
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
