@@ -11,11 +11,6 @@ const Presionado = () => {
   alert(textoIniciarSesion);
 };
 
-const Presionado2 = () => {
-  let textoIniciarSesion =
-    "Presionado pinche gato :v. Este botón llevará a una página distinta para crear un nuevo usuario. El usuario se guarda en una base de datos";
-  alert(textoIniciarSesion);
-};
 
 function LoginContainer({}: Props) {
   return (
@@ -83,21 +78,20 @@ function LoginContainer({}: Props) {
                   placeholder="Password"
                 />
               </div>
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-center">
                 <button
                   type="button"
-                  className="bg-[#B1E3ED] transition-all font-bold py-2 px-4 rounded hover:bg-teal-200 focus:outline-none focus:shadow-outline"
+                  className="bg-[#B1E3ED] transition-all font-bold w-full py-2 px-4 rounded hover:bg-teal-200 focus:outline-none focus:shadow-outline"
                   onClick={Presionado}
                 >
                   Iniciar sesión
                 </button>
-                <button
-                  type="button"
-                  className="bg-[#B1E3ED] transition-all font-bold py-2 px-4 rounded hover:bg-teal-200 focus:outline-none focus:shadow-outline"
-                  onClick={Presionado2}
-                >
-                  Crear cuenta
-                </button>
+                </div>
+              <div className="text-left font-semibold text-sm mt-4">
+                ¿No tienes una cuenta? 
+                <span className="ml-2 font-bold underline">
+                  <Link href='/SignUp' className=" text-gray-600 hover:text-blue-600 transition-colors">Crear cuenta</Link>
+                </span>
               </div>
             </form>
           </motion.div>
