@@ -6,7 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-
+      backgroundImage: {
+      'svg_cruces_azul_verde': "url('../public/img/cruces_azul_verde.svg')",
+      'thumbs_up': "url('../public/img/thumbs_up.jpg')",
+      }
     },
   },
   plugins: [],
