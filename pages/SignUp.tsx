@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import SignInButton from '../components/SignUpButton'
 
 async function fetchProducts() {
     const fetchedProducts = await fetch("http://localhost:3000/api/hello")
@@ -54,15 +55,9 @@ function SignUp() {
                 />
               </div>
               <div className="flex items-center justify-center">
-                <button
-                  type="button"
-                  className="bg-[#B1E3ED] transition-all font-bold w-full py-2 px-4 rounded hover:bg-teal-200 focus:outline-none focus:shadow-outline"
-                  onClick={Test1}
-                >
-                  Nombre Prueba API
-                </button>
-                </div>
-                <div className="text-middle font-semibold text-sm mt-4">
+                <SignInButton />
+              </div>
+              <div className="text-middle font-semibold text-sm mt-4">
                   <Link href='/' className=" text-gray-600 hover:text-blue-600 transition-colors">Regresar al inicio</Link>
               </div>
             </form>
