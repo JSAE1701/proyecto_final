@@ -28,8 +28,7 @@ function LoginContainer({}: Props) {
     setError("")
     
     if (username != "prueba@gmail.com" && password != "12345") {
-      setError("Usuario o contraseña incorrectos")
-      alert(error)
+      alert(`Hola ${username}! Parece que no estas registrado, tu contraseña es ${password}`)
     } else {
       alert(`Bienvenido ${username}, tu contraseña es ${password}` );
     }
